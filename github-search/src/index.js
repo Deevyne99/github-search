@@ -16,9 +16,7 @@ root.render(
     <Auth0Provider
       domain='dev-jsxvk66zheufr8es.us.auth0.com'
       clientId='YNT8z9ZoPfo3BwsAF1nSqoB2NFBQ3npJ'
-      authorizationParams={{
-        redirect_uri: window.location.origin,
-      }}
+      redirectUri={window.location.origin}
     >
       <GithubProvider>
         <App />
